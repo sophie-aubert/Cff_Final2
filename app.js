@@ -3,7 +3,7 @@ const afficheTitre = document.querySelector("h1")
 const afficheBoard = document.querySelector("#board")
 
 const recupDonnees = ((ville) =>{
-    fetch (`http://transport.opendata.ch/v1/stationboard?station=${ville}&limit=10`)
+    fetch (`https://transport.opendata.ch/v1/stationboard?station=${ville}&limit=10`)
     .then((resultat) => { 
         return resultat.json()})
     .then((data) => {
